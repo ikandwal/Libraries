@@ -28,9 +28,32 @@ import matplotlib.pyplot as plt
 # Uncomment the following lines to create a histogram
 
 #plt.hist(data, bins=no. of bins, color='color name', edgecolor='black')
-scores = [55, 65, 75, 85, 95, 60, 70, 80, 90, 100,10, 20, 30, 40, 50]
-plt.hist(scores, bins=5, color='skyblue', edgecolor='black')
-plt.xlabel('Scores')
-plt.ylabel('Frequency')
-plt.title('Distribution of Scores')
+# scores = [55, 65, 75, 85, 95, 60, 70, 80, 90, 100,10, 20, 30, 40, 50]
+# plt.hist(scores, bins=5, color='skyblue', edgecolor='black')
+# plt.xlabel('Scores')
+# plt.ylabel('Frequency')
+# plt.title('Distribution of Scores')
+# plt.show()
+
+# Scatter Plot
+# Uncomment the following lines to create a scatter plot
+
+#plt.scatter(x,y, color='color name', marker='marker style', label='label')
+# hours_studied = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# scores = [55, 65, 75, 85, 95, 60, 70, 80, 90, 100]
+# plt.scatter(hours_studied, scores, color='blue', marker='o', label='student scores')
+# plt.xlabel('Hours Studied') 
+# plt.ylabel('Scores')
+# plt.title('Scatter Plot of Study Hours vs Scores')  
+# plt.legend() 
+# plt.show()
+
+# new example
+plt.scatter([1, 2, 3, 4, 5], [10, 25, 20, 35, 40], color='red', marker='x', label='Class A') #G1
+plt.scatter([1, 2, 3, 4, 5], [15, 30, 25, 40, 45], color='green', marker='o', label='Class B') #G2
+plt.xlabel('Hours Studied') 
+plt.ylabel('Scores')
+plt.title('Comparison of Class A and Class B')  
+plt.grid(True, linestyle='--', alpha=0.5)  # Add grid for better readability
+plt.legend() 
 plt.show()
